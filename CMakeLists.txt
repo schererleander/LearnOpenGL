@@ -92,3 +92,41 @@ add_example(camera_class src/01_getting_started/camera_class/main.cpp)
 add_example(camera_exercise1 src/01_getting_started/camera_exercise1/main.cpp)
 
 add_example(camera_exercise2 src/01_getting_started/camera_exercise2/main.cpp)
+
+add_example(colors src/02_lighting/lighting_colors/main.cpp)
+
+add_example(basic_lighting_diffuse src/02_lighting/basic_lighting_diffuse/main.cpp)
+
+add_example(basic_lighting_specular src/02_lighting/basic_lighting_specular/main.cpp)
+
+add_example(basic_lighting_exercise1 src/02_lighting/basic_lighting_exercise1/main.cpp)
+
+add_example(basic_lighting_exercise2 src/02_lighting/basic_lighting_exercise2/main.cpp)
+
+add_example(materials src/02_lighting/materials/main.cpp)
+
+add_example(materials_exercise1 src/02_lighting/materials_exercise1/main.cpp)
+
+add_example(materials_exercise2 src/02_lighting/materials_exercise2/main.cpp)
+
+add_example(lighting_maps_diffuse src/02_lighting/lighting_maps_diffuse/main.cpp)
+
+add_example(lighting_maps_specular src/02_lighting/lighting_maps_specular/main.cpp)
+
+add_example(lighting_maps_exercise2 src/02_lighting/lighting_maps_exercise2/main.cpp)
+
+add_example(lighting_maps_exercise3 src/02_lighting/lighting_maps_exercise3/main.cpp)
+
+add_example(lighting_maps_exercise4 src/02_lighting/lighting_maps_exercise4/main.cpp)
+
+add_example(light_casters_directional src/02_lighting/light_casters_directional/main.cpp)
+
+add_example(light_casters_point src/02_lighting/light_casters_point/main.cpp)
+
+add_example(light_casters_spot src/02_lighting/light_casters_spot/main.cpp)
+
+add_example(light_casters_spot_soft src/02_lighting/light_casters_spot_soft/main.cpp)
+
+add_example(multiple_lights src/02_lighting/multiple_lights/main.cpp)
+
+add_example(multiple_lights_exercise1 src/02_lighting/multiple_lights_exercise1/main.cpp)
