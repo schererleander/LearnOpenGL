@@ -80,3 +80,15 @@ add_example(coordinate_systems_exercise1 src/01_getting_started/coordinate_syste
 add_example(coordinate_systems_exercise2 src/01_getting_started/coordinate_systems_exercise2/main.cpp)
 
 add_example(coordinate_systems_exercise3 src/01_getting_started/coordinate_systems_exercise3/main.cpp)
+
+add_example(camera src/01_getting_started/camera/main.cpp)
+
+add_example(camera_movement src/01_getting_started/camera_movement/main.cpp)
+
+add_example(camera_mouse_zoom src/01_getting_started/camera_mouse_zoom/main.cpp)
+
+add_example(camera_class src/01_getting_started/camera_class/main.cpp)
+
+add_example(camera_exercise1 src/01_getting_started/camera_exercise1/main.cpp)
+
+add_example(camera_exercise2 src/01_getting_started/camera_exercise2/main.cpp)
