@@ -38,3 +38,45 @@ add_example(hello_triangle_exercise_01 src/01_getting_started/hello_triangle_exe
 add_example(hello_triangle_exercise_02 src/01_getting_started/hello_triangle_exercise2/main.cpp)
 
 add_example(hello_triangle_exercise_03 src/01_getting_started/hello_triangle_exercise3/main.cpp)
+
+add_example(shaders_uniform src/01_getting_started/shaders_uniform/main.cpp)
+
+add_example(shaders_more_attributes src/01_getting_started/shaders_more_attributes/main.cpp)
+
+add_example(shaders_class src/01_getting_started/shaders_class/main.cpp)
+
+add_example(shaders_exercise1 src/01_getting_started/shaders_exercise1/main.cpp)
+
+add_example(shaders_exercise2 src/01_getting_started/shaders_exercise2/main.cpp)
+
+add_example(shaders_exercise3 src/01_getting_started/shaders_exercise3/main.cpp)
+
+add_example(textures src/01_getting_started/textures/main.cpp)
+
+add_example(textures_multiple src/01_getting_started/textures_multiple/main.cpp)
+
+add_example(textures_exercise1 src/01_getting_started/textures_exercise1/main.cpp)
+
+add_example(textures_exercise2 src/01_getting_started/textures_exercise2/main.cpp)
+
+add_example(textures_exercise3 src/01_getting_started/textures_exercise3/main.cpp)
+
+add_example(textures_exercise4 src/01_getting_started/textures_exercise4/main.cpp)
+
+add_example(transformations src/01_getting_started/transformations/main.cpp)
+
+add_example(transformations_exercise1 src/01_getting_started/transformations_exercise1/main.cpp)
+
+add_example(transformations_exercise2 src/01_getting_started/transformations_exercise2/main.cpp)
+
+add_example(coordinate_systems src/01_getting_started/coordinate_systems_going_3d/main.cpp)
+
+add_example(coordinate_systems_cube src/01_getting_started/coordinate_systems_cube/main.cpp)
+
+add_example(coordinate_systems_cube_multiple src/01_getting_started/coordinate_systems_cube_multiple/main.cpp)
+
+add_example(coordinate_systems_exercise1 src/01_getting_started/coordinate_systems_exercise1/main.cpp)
+
+add_example(coordinate_systems_exercise2 src/01_getting_started/coordinate_systems_exercise2/main.cpp)
+
+add_example(coordinate_systems_exercise3 src/01_getting_started/coordinate_systems_exercise3/main.cpp)
