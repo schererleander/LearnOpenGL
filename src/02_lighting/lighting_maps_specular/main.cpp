@@ -141,8 +141,8 @@ int main() {
   glBindVertexArray(0);
   glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-  unsigned diffuseMap = loadTexture("resources/container2.png");
-  unsigned specularMap = loadTexture("resources/container2_specular.png");
+  unsigned diffuseMap = loadTexture("resources/texturescontainer2.png");
+  unsigned specularMap = loadTexture("resources/texturescontainer2_specular.png");
 
   cubeShader.use();
   cubeShader.setInt("material.diffuse", 0);

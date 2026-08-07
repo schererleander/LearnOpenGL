@@ -1,0 +1,9 @@
+libdir=/usr/local/lib
+includedir=/usr/local/include
+
+Name: Assimp
+Description: Import various well-known 3D model formats in an uniform manner.
+Version: 6.0.5
+Libs: -L${libdir} -lassimp
+Libs.private:  -loptimized;/nix/store/bgcdi69yjzsa0ilg0flk06xc47im9fmz-zlib-1.3.2/lib/libz.dylib;debug;/nix/store/bgcdi69yjzsa0ilg0flk06xc47im9fmz-zlib-1.3.2/lib/libz.dylib
+Cflags: -I${includedir}

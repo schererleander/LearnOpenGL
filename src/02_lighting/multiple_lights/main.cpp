@@ -164,8 +164,8 @@ int main() {
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)0);
   glEnableVertexAttribArray(0);
 
-  unsigned diffuseMap = loadTexture("resources/container2.png");
-  unsigned specularMap = loadTexture("resources/container2_specular.png");
+  unsigned diffuseMap = loadTexture("resources/texturescontainer2.png");
+  unsigned specularMap = loadTexture("resources/texturescontainer2_specular.png");
 
   cubeShader.use();
   cubeShader.setInt("material.diffuse", 0);

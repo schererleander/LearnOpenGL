@@ -143,7 +143,7 @@ int main() {
   glBindVertexArray(0);
   glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-  unsigned int diffuseMap = loadTexture("resources/container2.png");
+  unsigned int diffuseMap = loadTexture("resources/texturescontainer2.png");
   cubeShader.use();
   cubeShader.setInt("material.diffuse", 0);
 

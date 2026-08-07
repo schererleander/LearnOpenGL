@@ -23,10 +23,26 @@ FetchContent_MakeAvailable(glfw)
 add_library(glad STATIC src/gl.c)
 target_include_directories(glad PUBLIC include)
 
+add_library(assimp SHARED IMPORTED)
+
+if(APPLE)
+    set_target_properties(assimp PROPERTIES
+        IMPORTED_LOCATION "${CMAKE_SOURCE_DIR}/lib/macos/libassimp.dylib"
+        INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_SOURCE_DIR}/include"
+    )
+elseif(UNIX)
+    set_target_properties(assimp PROPERTIES
+        IMPORTED_LOCATION "${CMAKE_SOURCE_DIR}/lib/linux/libassimp.so.6.0.5"
+        IMPORTED_SONAME "libassimp.so.6"
+        INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_SOURCE_DIR}/include"
+        INTERFACE_LINK_OPTIONS "-Wl,-rpath,${CMAKE_SOURCE_DIR}/lib/linux"
+    )
+endif()
+
 function(add_example name source)
     add_executable(${name} ${source})
     target_compile_definitions(${name} PRIVATE GLFW_INCLUDE_NONE)
-    target_link_libraries(${name} PRIVATE glad glfw)
+    target_link_libraries(${name} PRIVATE glad glfw assimp)
 endfunction()
 
 add_example(hello_window src/01_getting_started/hello_window/main.cpp)
@@ -130,3 +146,7 @@ add_example(light_casters_spot_soft src/02_lighting/light_casters_spot_soft/main
 add_example(multiple_lights src/02_lighting/multiple_lights/main.cpp)
 
 add_example(multiple_lights_exercise1 src/02_lighting/multiple_lights_exercise1/main.cpp)
+
+add_example(model_loading src/03_model_loading/model_loading/main.cpp)
+
+add_example(model_loading_lights src/03_model_loading/model_loading_lights/main.cpp)
